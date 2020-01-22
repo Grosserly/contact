@@ -1,1 +1,61 @@
-@keyframes hue-shift{from{filter:hue-rotate(0deg)}to{filter:hue-rotate(359deg)}}@keyframes fade-in{from{filter:opacity(0)}to{filter:opacity(1)}}#container{position:absolute;top:0;right:0;bottom:0;left:0;background:#4b7;background-image:url("noise.png"),url("background.jpg");background-size:auto,cover;background-repeat:repeat;animation:hue-shift 10s linear infinite}#centerbox{position:absolute;color:inherit;text-decoration:inherit;display:block;top:50%;left:50%;transform:translate(-50%, -50%);width:500px;height:500px;background:rgba(23,23,23,.5);border:2px solid #fafafa;box-shadow:0 0 50px;text-align:center;animation:fade-in 1s}#logo{max-width:calc(90% - 50px);max-height:75%;margin:50px;margin-bottom:0}#contact{font-family:proxima-nova,sans-serif;font-style:normal;font-weight:500;font-size:1.5em;margin:-20px;color:#fafafa}#contact p{color:#fafafa;text-decoration:none}#contact div{margin-bottom:20px}
+@keyframes hue-shift{
+	from { filter:hue-rotate(0deg)   }
+	to   { filter:hue-rotate(359deg) }
+}
+
+@keyframes fade-in {
+	from { filter:opacity(0) }
+	to   { filter:opacity(1) }
+}
+
+#container {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background: #4B7;
+	background-image: url("noise.png"), url("background.jpg");
+	background-size: auto, cover;
+	background-repeat: repeat;
+	animation: hue-shift 10s linear infinite;
+}
+
+#centerbox {
+	position: absolute;
+	color: inherit;
+	text-decoration: inherit;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 500px;
+	background: #1717177F; /* Off-black, 50% transparency */
+	border: 2px solid #FAFAFA; /* Off-white */
+	box-shadow: 0 0 50px;
+	text-align: center;
+	animation: fade-in 1s;
+}
+
+#logo {
+	max-width: calc(90% - 50px);
+	max-height: 75%;
+	margin: 50px;
+	margin-bottom: 0;
+}
+
+#contact {
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5em;
+	margin: -20px;
+	color: #FAFAFA;
+}
+
+#contact p {
+	color: #FAFAFA;
+	text-decoration: none;
+}
+
+#contact div {
+	margin-bottom: 20px;
+}
